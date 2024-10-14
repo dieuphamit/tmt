@@ -86,8 +86,9 @@
   function displaySuccess(thisForm) {
     thisForm.querySelector('.loading').classList.remove('d-block');
     thisForm.querySelector('.error-message').classList.remove('d-block');
-    thisForm.querySelector('.sent-message').classList.add('d-block');    
-    $('.form-control').val('');
+    thisForm.querySelector('.sent-message').classList.add('d-block');
+    let input = document.querySelectorAll('.form-control');
+    input.val('');
   }
 
 })();
