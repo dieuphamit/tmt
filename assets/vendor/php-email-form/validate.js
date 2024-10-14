@@ -88,7 +88,10 @@
     thisForm.querySelector('.error-message').classList.remove('d-block');
     thisForm.querySelector('.sent-message').classList.add('d-block');
     let input = document.querySelectorAll('.form-control');
-    input.val('');
+    // Xóa giá trị của tất cả các input
+    inputs.forEach(function(input) {
+        input.value = ''; // Xóa giá trị của input
+    });
   }
 
 })();
