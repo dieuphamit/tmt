@@ -529,12 +529,44 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #50d8af;
+  /* dieupham----*/
+  background: #36dcea;
   bottom: 0;
   left: 0;
 }
 
 .section-header p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Sections Header dieupham
+--------------------------------*/
+.section-header2 {
+  margin-bottom: 30px;
+}
+
+.section-header2 h2 {
+  font-size: 32px;
+  color: #0c2e8a;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header2 h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #36dcea;
+  bottom: 0;
+  left: 0;
+}
+
+.section-header2 p {
   padding: 0;
   margin: 0;
 }
@@ -658,14 +690,78 @@ section {
   padding-bottom: 10px;
 }
 
+/* About2 Section dieupham
+--------------------------------*/
+#about2 {
+  padding: 60px 0 30px 0;
+}
+
+#about2 .about-img {
+  overflow: hidden;
+}
+
+#about2 .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #about2 .about-img {
+    height: auto;
+  }
+
+  #about2 .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#about2 .content h2 {
+  color: #0c2e8a;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+#about2 .content h3 {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about2 .content p {
+  line-height: 26px;
+}
+
+#about2 .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about2 .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #50d8af;
+}
+
+#about2 .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about2 .content ul li {
+  padding-bottom: 10px;
+}
+
 /* Services Section
 --------------------------------*/
 #services {
   padding: 40px 0;
 }
-
+/* dieupham */
 #services .box {
-  padding: 40px;
+  padding: 20px;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: #fff;
   transition: 0.4s;
